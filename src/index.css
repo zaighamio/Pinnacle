@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700&family=Manrope:wght@400;500;600;700&display=swap');
+@import '@rainbow-me/rainbowkit/styles.css';
+
+@theme {
+  --color-primary: #9f4127;
+  --color-primary-container: #e8785a;
+  --color-surface: #faf9fc;
+  --color-surface-bright: #faf9ff;
+  --color-surface-dim: #d6d9e8;
+  --color-surface-variant: #dfe2f1;
+  --color-background: #ede7f6;
+  --color-on-surface: #171b26;
+  --color-on-surface-variant: #56423d;
+  --color-secondary: #5d5e61;
+  --color-outline: #89726c;
+  --color-outline-variant: #ddc0b9;
+  
+  --font-display: 'Hanken Grotesk', sans-serif;
+  --font-body: 'Manrope', sans-serif;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-on-surface);
+  font-family: var(--font-body);
+}
+
+h1, h2, h3, h4, h5, h6, .font-display {
+  font-family: var(--font-display);
+}
+
+.shadow-glow {
+  box-shadow: 0 10px 40px -10px rgba(149, 128, 176, 0.15), 0 4px 20px -5px rgba(232, 120, 90, 0.08);
+}
+.shadow-active-glow {
+  box-shadow: 0 10px 40px -10px rgba(232, 120, 90, 0.25), 0 4px 20px -5px rgba(232, 120, 90, 0.15);
+}
