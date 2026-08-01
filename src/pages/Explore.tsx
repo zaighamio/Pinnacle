@@ -6,7 +6,7 @@ import { pinnacleContractConfig } from '../lib/contract';
 // Pricing Model enum based on ABI (0 = Free, 1 = PerCall, 2 = Subscription)
 const PRICING_MODELS = ['Free', 'Per Call', 'Subscription'];
 
-const AgentCard: React.FC<{ id: bigint }> = ({ id }) => {
+function AgentCard({ id }: { id: bigint; key?: string }) {
   const { data: agent, isLoading } = useReadContract({
     ...pinnacleContractConfig,
     functionName: 'getAgent',
